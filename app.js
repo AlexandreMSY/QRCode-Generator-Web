@@ -1,11 +1,15 @@
-function test(){
+var qrcode = undefined;
+
+function generateQR(value){
     let qrHolder = document.getElementById('qrcode');
 
     let options = {
-        text: document.getElementById('text').value,
+        text: value,
     };
 
-    new QRCode(qrHolder, options);
-
-    console.log(options)
+    if (qrcode === undefined){
+        qrcode = new QRCode(qrHolder,options);
+    }else{
+        qrcode.makeCode(value)
+    }
 }
