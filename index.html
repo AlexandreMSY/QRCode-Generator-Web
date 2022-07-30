@@ -35,9 +35,22 @@
                 <div class="containers">
                     <div class="container text-center">
                         <div class="col">
-                            <h5 class="containerh5">URL:</h5>
+                            <h5 class="containerh5">URL</h5>
                             <input id='text' type="text" style="width: 100%">
                             <button type="button" class="btn btn-secondary" style="margin-top: 1%;" onclick="generateQR(document.getElementById('text').value)">Generate</button>
+                        </div>
+                        <div class="col mt-2">
+                            <h5 class="containerh5">Size</h5>
+                            <div class="row">
+                                <div class="col col-mt-2">
+                                    <label for="height" style="width: 60%">Height: </label>
+                                    <input type="number" id="height" value="256" style="width: 60%">
+                                </div>
+                                <div class="col col-mt-2">
+                                    <label for="width" style="width: 60%">Width: </label>
+                                    <input type="number" id="width" value="256" style="width: 60%">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
