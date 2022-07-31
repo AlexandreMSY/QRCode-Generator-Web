@@ -6,11 +6,10 @@ function generateQR(value){
     let options = {
         text: value,
         width: parseInt(document.getElementById('width').value),
-        height: parseInt(document.getElementById('height').value)
+        height: parseInt(document.getElementById('height').value),
+        colorDark: document.getElementById('patterncolor').value,
+        colorLight: document.getElementById('backgroundcolor').value,
     };
-
-    console.log(typeof options.width)
-
 
     if (qrcode === undefined){
         qrcode = new QRCode(qrHolder, options);
