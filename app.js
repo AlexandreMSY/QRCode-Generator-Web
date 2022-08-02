@@ -18,3 +18,12 @@ function generateQR(value){
         qrcode = new QRCode(qrHolder, options);
     }
 }
+
+function downloadCanvas(){
+    let canvas = document.getElementsByTagName('canvas');
+    let qrCanvas = canvas[0];
+    let anchor = document.createElement("a");
+    anchor.href = qrCanvas.toDataURL("image/png");
+    anchor.download = "qr.png";
+    anchor.click();
+}

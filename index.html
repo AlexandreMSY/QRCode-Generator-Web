@@ -37,7 +37,8 @@
                         <div class="col">
                             <h5 class="containerh5">URL</h5>
                             <input id='text' type="text" style="width: 100%">
-                            <button type="button" class="btn btn-secondary" style="margin-top: 1%;" onclick="generateQR(document.getElementById('text').value)">Generate</button>
+                            <button type="button" class="buttons" style="margin-top: 1%;" onclick="generateQR(document.getElementById('text').value)">Generate</button>
+                            <button type="button" class="buttons" style="margin-top: 1%; background-color: red; border: 1px solid red;" onclick="downloadCanvas()">Save QR</button>
                         </div>
                         <div class="col mt-2">
                             <h5 class="containerh5">Size</h5>
@@ -58,12 +59,12 @@
                                 <div>
                                     <label for="patterncolour" style="width: 60%">Pattern Colour</label>
                                     <br>
-                                    <input type="color" id="patterncolor">
+                                    <input type="color" id="patterncolor" class="colourPicker">
                                 </div>
                                 <div>
                                     <label for="colour" style="width: 60%">Background Colour</label>
                                     <br>
-                                    <input type="color" id="backgroundcolor" value="#ffffff">
+                                    <input type="color" id="backgroundcolor" class="colourPicker" value="#ffffff">
                                 </div>
                             </div>
                         </div>
