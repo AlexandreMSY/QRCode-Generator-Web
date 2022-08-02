@@ -1,7 +1,7 @@
 var qrcode = undefined;
 
 function generateQR(value){
-    let qrHolder = document.getElementById('qrcode');
+    let qrHolder = document.getElementById('qrcode'); /*place where the qrcode image is going to appear*/
     
     let options = {
         text: value,
