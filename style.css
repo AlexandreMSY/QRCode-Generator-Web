@@ -33,4 +33,15 @@
     border-radius: 2px;
 }
 
+.buttons {
+    background-color: lightslategrey;
+    color: white;
 
+    border: 1px solid lightslategray;
+    border-radius: 2px;
+}
+
+.colourPicker {
+    border-radius: 2px;
+    padding: 0%;
+}
